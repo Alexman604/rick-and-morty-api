@@ -1,0 +1,43 @@
+.terms-of-service {
+  max-width: 90vw;
+  margin-left: 1rem;
+  min-height: calc(100vh - 110px); 
+  padding-bottom: 60px;
+
+  &__title {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+
+    a {
+      color: blue;
+      text-decoration: underline;
+
+      &:hover {
+        color: navy;
+      }
+    }
+  }
+
+  &__link {
+    color: blue;
+    text-decoration: underline;
+
+    &:hover {
+      color: navy;
+    }
+  }
+}
