@@ -2,6 +2,7 @@ import axios from "axios";
 
 class RmServices {
   getAllCharacters = async () => {
+    console.log("fetched")
     const url = "https://rickandmortyapi.com/api/character";
     try {
       let allData = [];
@@ -17,7 +18,6 @@ class RmServices {
       throw error;
     }
   };
-
 
   getCharacterById = async (id) => {
     const url = `https://rickandmortyapi.com/api/character/${id}`;

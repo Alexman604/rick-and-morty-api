@@ -1,7 +1,5 @@
 import jwt_decode from "jwt-decode";
-
 import { useEffect } from "react";
-
 import { useNavigate } from "react-router-dom";
 
 const GoogleLogin = () => {
@@ -10,15 +8,14 @@ const GoogleLogin = () => {
   const handleCallbackResponse = (response) => {
     let userObject = jwt_decode(response.credential);
     if (userObject) {
-      const { name, picture, sub } = userObject;
+      // const { name, picture, sub } = userObject;
       document.getElementById("login").innerHTML = `Hello ${userObject.name}`;
-      const userData = {
-        userName: name,
-        userImage: picture,
-        userId: sub,
-      };
-console.log(userData)
-console.log(userObject);
+      // const userData = {
+      //   userName: name,
+      //   userImage: picture,
+      //   userId: sub,
+      // };
+
       navigate("/");
     }
   };

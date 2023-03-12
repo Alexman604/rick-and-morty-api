@@ -22,14 +22,12 @@
     padding: 1rem;
   }
 
-    @media (max-width: 576px) {
-    
-  
+  @media (max-width: 576px) {
     min-height: calc(100vh - 60px);
-      &__image {
-        margin-top: 3rem;
-    max-width: 250px;
-    height: auto;
-  }
+    &__image {
+      margin-top: 3rem;
+      max-width: 250px;
+      height: auto;
+    }
   }
 }

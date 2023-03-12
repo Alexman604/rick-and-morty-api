@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -29,10 +28,7 @@ export default function TermsOfService() {
           Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information
           available through this website meet your specific requirements.
         </li>
-        <li>
-Reproduction is prohibited other than in
-          accordance with the copyright notice, which forms part of these terms and conditions.
-        </li>
+        <li>Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</li>
         <li>All trademarks reproduced in this website, which are not the property of, or licensed to the operator, are acknowledged on the website.</li>
         <li>Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offence.</li>
         <li>
@@ -52,7 +48,7 @@ Reproduction is prohibited other than in
       <h3 className="terms-of-service__subtitle">Contact Us</h3>
 
       <p className="terms-of-service__description">
-        If you have any questions about these Terms of Service, please contact us at {" "}
+        If you have any questions about these Terms of Service, please contact us at{" "}
         <a href="goaman604@gmail.com" className="terms-of-service__link">
           goaman604@gmail.com
         </a>

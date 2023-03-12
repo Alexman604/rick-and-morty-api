@@ -1,9 +1,8 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import "./noPageFound.scss";
 import { useNavigate } from "react-router-dom";
-import npf from "./npf.png"
+import "./noPageFound.scss";
+import npf from "./npf.png";
 
 const NoPageFound = () => {
   const navigate = useNavigate();

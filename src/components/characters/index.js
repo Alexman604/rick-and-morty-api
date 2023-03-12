@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import logo from "./RnM_logo.png";
-import "./characters.scss";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import CharacterCard from "./characterCard";
 import GoogleLogin from "../googleOAuth/google_login";
 import Spinner from "../spinner/spinner";
+import "./characters.scss";
 
 function Characters({ characters }) {
   const [numToShow, setNumToShow] = useState(36);
@@ -41,9 +41,8 @@ function Characters({ characters }) {
   }
   return (
     <div className="wrapper">
-      <div id="login" className="login"> LOGIN</div>
-
-      <GoogleLogin /> 
+      <div id="login" className="login"></div>
+      <GoogleLogin />
       <img src={logo} alt="Logo" className="wrapper__logo" />
       <div className="characters">
         <div className="characters__search">
